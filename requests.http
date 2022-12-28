@@ -1,0 +1,24 @@
+### Post CronJob Result
+POST http://127.0.0.1:3000/cronjob/result
+Content-Type: application/json
+
+{
+  "id": "a7bde670-10de-4dc5-a65f-5202a9da585f",
+  "status": "success",
+  "resultCode": 0,
+  "output": "some random text",
+  "startTime": 1672231878230,
+  "endTime": 1672231894185
+}
+
+### Post CronJob Result without Output
+POST http://127.0.0.1:3000/cronjob/result
+Content-Type: application/json
+
+{
+  "id": "a7bde670-10de-4dc5-a65f-5202a9da585f",
+  "status": "success",
+  "resultCode": 0,
+  "startTime": 1672231878230,
+  "endTime": 1672231894185
+}
